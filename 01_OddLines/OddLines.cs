@@ -1,6 +1,11 @@
 ﻿using System;
 using System.IO;
 
+/*
+ * Write a program that reads a text file and prints on the console its odd lines. 
+ * Line numbers starts from 0. Use StreamReader.
+ */
+
 class OddLines
 {
     static void Main()
