@@ -1,6 +1,12 @@
 ﻿using System;
 using System.IO;
 
+/*
+ * Write a program that copies the contents of a binary file (e.g. image, video, etc.) 
+ * to another using FileStream. 
+ * You are not allowed to use the File class or similar helper classes.
+ */
+
 class CopyBinaryFile
 {
     static void Main()
