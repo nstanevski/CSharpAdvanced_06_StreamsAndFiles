@@ -36,9 +36,9 @@ class DirectoryTraversal
         {
             FileProperties fProp = new FileProperties
             {
-                name = fInfo.Name, 
-                extension = fInfo.Extension, 
-                length = fInfo.Length/1024.0
+                name = fInfo.Name,
+                extension = fInfo.Extension,
+                length = fInfo.Length / 1024.0
             };
             listFileProp.Add(fProp);
         }
@@ -54,12 +54,12 @@ class DirectoryTraversal
         //write the result
         string desktop = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
         StreamWriter sw = new StreamWriter(desktop + "/report.txt");
-       foreach (var extGroup in queryFiles )
-       {
-           sw.WriteLine(extGroup.Key);
-           foreach (var fProp in extGroup)
-               sw.WriteLine("--{0} - {1:f2}kb", fProp.name, fProp.length);
-       }
-       sw.Close();
+        foreach (var extGroup in queryFiles)
+        {
+            sw.WriteLine(extGroup.Key);
+            foreach (var fProp in extGroup)
+                sw.WriteLine("--{0} - {1:f2}kb", fProp.name, fProp.length);
+        }
+        sw.Close();
     }
 }
