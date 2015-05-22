@@ -3,6 +3,12 @@ using System.IO;
 using System.IO.Compression;
 using System.Collections.Generic;
 
+/*
+ * Modify your previous program to also compress the bytes while slicing parts 
+ * and decompress them when assembling them back to the original file. Use GzipStream.
+ * Tip: When getting files from directory, make sure you only get files with .gz extension 
+ * (there might be hidden files).
+ */
 
 class GzippingSlicedFiles
 {
